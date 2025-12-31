@@ -46,5 +46,8 @@ if (host_os != "linux" || host_cpu != "arm64") {
     build_root = "build.rs"
     build_sources = [ "build.rs" ]
     build_script_outputs = [ "librust_out.rmeta" ]
+    module_output_extension = ".rlib"
+    part_name = "rust_rustix"
+    subsystem_name = "thirdparty"
   }
 }
